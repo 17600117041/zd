@@ -1,8 +1,8 @@
 <?php
 ini_set('display_errors', 'on');
-//error_reporting(E_ALL || E_STRICT);
-//date_default_timezone_set('Asia/Shanghai');
-//ini_set('memory_limit', '1024M');
+error_reporting(E_ALL || E_STRICT);
+date_default_timezone_set('Asia/Shanghai');
+ini_set('memory_limit', '1024M');
 
 
 //int
