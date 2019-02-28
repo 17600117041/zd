@@ -1,0 +1,21 @@
+{
+  "config": {
+    "vendor-dir": "src/vendor",
+    "gitlab-domains": [
+      "https://gitlab.mfwdev.com"
+    ]
+  },
+  "require": {
+    "mfw/ko": "^0.9",
+    "mfw/log": "^0.6"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://satis.mfwdev.com/"
+    }
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "3.4.14"
+  }
+}

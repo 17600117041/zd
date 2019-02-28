@@ -1,0 +1,5 @@
+.DS_Store
+src/vendor
+*vendor
+#composer.lock
+composer.phar
