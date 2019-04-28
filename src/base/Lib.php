@@ -28,7 +28,7 @@ class Lib
         if ($error !== null && in_array($error[type], self::$fatalErrors)) {
             Runtime::error([
                 'type'   => $error['type'],
-                'messge' => $error['messge'],
+                'message' => $error['message'],
                 'file'   => $error['file'],
                 'line'   => $error['line'],
             ]);

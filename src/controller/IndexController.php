@@ -6,10 +6,12 @@ use base\web\Controller;
 
 class IndexController extends Controller
 {
-    public function actionIndex()
+    public function actionIndex($id)
     {
         return $this->response([
-            'message' => 'test',
+            'message' => [
+                'id' => $id,
+            ],
         ]);
     }
 }

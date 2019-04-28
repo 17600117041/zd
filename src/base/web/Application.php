@@ -60,8 +60,8 @@ class Application extends Base
 
     public function getControllerActionName()
     {
-        $requestUri = trim($this->request->requestUri, '/');
-        $aRequestUri = explode('/', $requestUri);
+        $script = trim($this->request->script, '/');
+        $aRequestUri = explode('/', $script);
         list($controllerName, $actionName) = $aRequestUri;
         $this->controllerName = $controllerName ?: 'index';
         $this->actionName     = $actionName ?: 'index';

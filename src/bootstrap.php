@@ -11,3 +11,10 @@ define('KO_REDIS_ENGINE', getenv('KO_REDIS_ENGINE') ?: 'kproxy');
 
 //Ko autoload
 require(VENDOR_DIR . "/mfw/ko/ko.class.php");
+
+require(ROOT_DIR . "/base/Lib.php");
+
+register_shutdown_function([\base\Lib::class, 'shutdownHandler']);
+set_error_handler([\base\Lib::class, 'errorHandler'], error_reporting());
+set_exception_handler([\base\Lib::class, 'exceptionHandler']);
+assert_options(ASSERT_CALLBACK, [\base\Lib::class, 'assertCallback']);

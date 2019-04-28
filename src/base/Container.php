@@ -49,9 +49,9 @@ class Container extends Component
             if ($reflection->isSubclassOf(ObjectZ::class)) {
                 return $reflection->newInstanceArgs([$params]);
             }
-            return $reflection->newInstanceArgs([$params]);
+            return $reflection->newInstanceArgs($params);
         } else {
-            $this->_singletons[$class] = $reflection->newInstanceArgs([$params]);
+            $this->_singletons[$class] = $reflection->newInstanceArgs($params);
             return $this->_singletons[$class];
         }
     }

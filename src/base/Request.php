@@ -41,7 +41,7 @@ class Request extends Component
 
     public function getScript()
     {
-        return Z::$app->server->get('SCRIPT_FILENAME');
+        return Z::$app->server->get('SCRIPT_NAME');
     }
 
     public function getRequestUri()
